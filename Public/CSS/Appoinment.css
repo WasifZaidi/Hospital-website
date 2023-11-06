@@ -1,0 +1,170 @@
+.Appoinment {
+    padding: 5vw 6vw;
+    font-family: 'EB Garamond', serif;
+}
+
+.Appoinment .heading h1 {
+    font-size: 7vw;
+}
+
+.Appoinment .heading h1 span {
+    color: rgb(37, 179, 37);
+}
+
+.Appoinment-section {
+    width: 100%;
+    height: max-content;
+    padding: 0vw 5vw;
+    padding-top: 2vw;
+}
+
+.Appoinment-section .Appoinment-form {
+    width: 100%;
+    height: max-content;
+    padding: 3vw 3vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Appoinment-section .Appoinment-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.Appoinment-section .Appoinment-form form .inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+}
+
+.Appoinment-section .Appoinment-form form .inputs input {
+    width: 100%;
+    font-size: 1.2vw;
+    padding: 1vw;
+    background-color: rgb(58, 58, 58);
+    border: 0px solid;
+    color: black;
+    outline: none;
+}
+
+.Appoinment-section .Appoinment-form form .inputs input::placeholder {
+    color: white;
+}
+
+.Appoinment-section .Appoinment-form form .textarea {
+    display: flex;
+    gap: 1vw;
+    flex-direction: column;
+}
+
+.Appoinment-section .Appoinment-form form .textarea textarea {
+    width: 100%;
+    resize: none;
+    height: 15vw;
+    font-size: 1.2vw;
+    padding: 1vw;
+    background-color: rgb(58, 58, 58);
+    border: 0px solid;
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.Appoinment-section .Appoinment-form form .textarea textarea::placeholder {
+    color: white;
+}
+
+.Appoinment-section .Appoinment-form form .textarea input {
+    width: 100%;
+    font-size: 1.7vw;
+    padding: 1.5vw;
+    background-color: rgb(58, 58, 58);
+    border: 0px solid;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+}
+
+@media screen and (max-width:1000px) {
+    .Appoinment {
+        padding: 10vw 6vw;
+    }
+
+    .Appoinment-section {
+        padding: 0vw;
+        padding-top: 4vw;
+    }
+
+    .Appoinment .heading h1 {
+        font-size: 9vw;
+        text-align: center;
+    }
+
+    .Appoinment-section .Appoinment-form {
+        padding: 5vw 5vw;
+    }
+
+    .Appoinment-section .Appoinment-form form {
+        gap: 2vw;
+    }
+
+    .Appoinment-section .Appoinment-form form .inputs {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2vw;
+    }
+
+    .Appoinment-section .Appoinment-form form .inputs input {
+        width: 100%;
+        font-size: 2.4vw;
+        padding: 2vw;
+    }
+
+    .Appoinment-section .Appoinment-form form .textarea {
+        gap: 2vw;
+    }
+
+    .Appoinment-section .Appoinment-form form .textarea textarea {
+        width: 100%;
+        resize: none;
+        height: 20vw;
+        font-size: 2.4vw;
+        padding: 2vw;
+    }
+
+    .Appoinment-section .Appoinment-form form .textarea input {
+        width: 100%;
+        font-size: 2.4vw;
+        padding: 2vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .Appoinment {
+        padding: 20vw 6vw;
+    }
+    .Appoinment-section {
+        padding-top: 6vw;
+    }
+
+    .Appoinment .heading h1 {
+        font-size: 12vw;
+        text-align: center;
+    }
+    
+
+    .Appoinment-section .Appoinment-form form .inputs input {
+        font-size: 4vw;
+        padding: 4vw;
+    }
+
+    .Appoinment-section .Appoinment-form form .textarea textarea {
+        font-size: 4vw;
+        padding: 4vw;
+        height: 30vw;
+    }
+
+    .Appoinment-section .Appoinment-form form .textarea input {
+        font-size: 4vw;
+        padding: 4vw;
+    }
+}

@@ -1,0 +1,213 @@
+.About {
+    padding: 2vw 6vw;
+    padding-bottom: 0vw;
+    font-family: 'EB Garamond', serif;
+}
+
+.About .heading h1 {
+    font-size: 7vw;
+}
+
+.About .heading h1 span {
+    color: rgb(37, 179, 37);
+}
+
+.About .About-section {
+    width: 100%;
+    height: max-content;
+    padding-top: 4vw;
+    padding-bottom: 0vw;
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    align-items: center;
+}
+
+.About .About-section .left {
+    width: 50%;
+}
+
+.About .About-section img {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.About .About-section .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    height: max-content;
+}
+
+.About .About-section .card {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.About .About-section .card b {
+    font-size: 4vw;
+}
+
+.About .About-section .card p {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+.more-det {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.more-det .more {
+    width: max-content;
+    height: max-content;
+    background-color: gainsboro;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1vw 3vw;
+    cursor: pointer;
+}
+
+.more-det .more b {
+    font-size: 1.7vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.more-det .more p {
+    font-size: 1.5vw;
+    display: none;
+    font-weight: 500;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media screen and (max-width:1000px) {
+    .About {
+        padding: 10vw 6vw;
+        padding-bottom: 0vw;
+    }
+
+    .About .heading h1 {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .About .About-section {
+        padding-top: 6vw;
+        padding-bottom: 0vw;
+        flex-direction: column-reverse;
+        gap: 4vw;
+    }
+
+    .About .About-section .right {
+        width: 100%;
+        gap: 4vw;
+    }
+
+    .About .About-section .card b {
+        font-size: 7vw;
+    }
+
+    .About .About-section .card p {
+        font-size: 3vw;
+    }
+
+    /* ::-webkit-scrollbar{
+        display: none;
+    } */
+    .About .About-section .left {
+        width: 100%;
+    }
+
+    .more-det {
+        gap: 2vw;
+    }
+
+    .more-det .more {
+        gap: 1.5vw;
+        padding: 3vw 3vw;
+    }
+
+    .more-det .more b {
+        font-size: 4vw;
+    }
+
+    .more-det .more p {
+        font-size: 3vw;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .About {
+        padding: 20vw 6vw;
+        padding-bottom: 0vw;
+    }
+
+    .About .heading h1 {
+        font-size: 12vw;
+    }
+
+    .About .About-section {
+        gap: 8vw;
+    }
+
+    .About .About-section .right {
+        gap: 8vw;
+    }
+
+    .About .About-section .card {
+        gap: 2vw;
+    }
+
+    .About .About-section .card b {
+        font-size: 10vw;
+    }
+
+    .About .About-section .card p {
+        font-size: 5.5vw;
+    }
+
+    .more-det {
+        gap: 3vw;
+    }
+
+    .more-det .more {
+        gap: 2vw;
+        padding: 4vw 3vw;
+    }
+
+    .more-det .more b {
+        font-size: 7.5vw;
+    }
+
+    .more-det .more p {
+        font-size: 5vw;
+    }
+}

@@ -1,0 +1,177 @@
+.Team {
+    padding: 5vw 6vw;
+    font-family: 'EB Garamond', serif;
+    padding-bottom: 0vw;
+}
+.Team .heading h1 {
+    font-size: 7vw;
+}
+
+.Team .heading span {
+    color: rgb(37, 179, 37);
+}
+
+.Team .Cards {
+    width: 100%;
+    height: max-content;
+    padding-top: 2vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw
+}
+
+.Team .Cards .Card {
+    width:100% ;
+    height: max-content;
+    background-color: #f89b9e;
+    display: flex;
+    flex-direction: column-reverse;
+background-image: linear-gradient(315deg, #f89b9e 0%, #c9d9ff 74%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.Team .Cards .Card .img {
+    position: relative;
+}
+
+.Team .Cards .Card img {
+    width: 100%;
+}
+
+.Team .Cards .Card .text {
+    padding: 1vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.Team .Cards .Card .text h1 {
+    font-size: 2vw;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.Team .Cards .Card .text p {
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.Team .Cards .Card .text a {
+    background-color: rgb(255, 174, 0);
+    color: black;
+    width: max-content;
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+}
+
+@media screen and (max-width:1400px) {
+    .Team .Cards .Card .text h1{
+        font-size: 2.3vw;
+    }
+    .Team .Cards .Card .text b{
+        font-size: 1.8vw;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .Team .Cards .Card .text p {
+        font-size: 1.7vw;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .Team {
+        padding: 10vw 6vw;
+        padding-bottom: 0vw;
+
+    }
+
+    .Team .heading h1 {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .Team .heading span {
+        font-size: 12vw;
+        color: rgb(37, 179, 37);
+    }
+
+    .Team .Cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+        padding-top: 4vw;
+    }
+
+    .Team .Cards .Card .text {
+        padding: 3vw;
+        padding-bottom: 3vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vw;
+    }
+
+    .Team .Cards .Card .text h1 {
+        font-size: 4vw;
+        gap: 2vw;
+    }
+
+    .Team .Cards .Card .text p {
+        font-size: 3vw;
+        font-weight: 500;
+    }
+
+    .Team .Cards .Card .text a {
+        background-color: rgb(255, 174, 0);
+        color: black;
+        padding: 2vw 2vw;
+        width: max-content;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .Team {
+        padding: 20vw 6vw;
+        padding-bottom: 0vw;
+    }
+    .Team .heading h1 {
+        font-size: 15vw;
+        text-align: center;
+    }
+
+    .Team .Cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 6vw;
+        padding-top: 6vw;
+    }
+
+    .Team .Cards .Card .text {
+        padding: 4vw;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .Team .Cards .Card .text h1 {
+        font-size: 8vw;
+        gap: 4vw;
+    }
+
+    .Team .Cards .Card .text p {
+        font-size: 5vw;
+        font-weight: 500;
+        padding-bottom: 3vw;
+    }
+
+    .Team .Cards .Card .text a {
+        padding: 4vw 6vw;
+        font-size: 4vw;
+    }
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/About.css">
+    <link rel="stylesheet" href="./CSS/Services.css">
+    <link rel="stylesheet" href="./CSS/Testimonial.css">
+    <link rel="stylesheet" href="./CSS/Appoinment.css">
+    <link rel="stylesheet" href="./CSS/Packeges.css">
+    <link rel="stylesheet" href="./CSS/Team.css">
+    <link rel="stylesheet" href="./CSS/Footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="navar">
+        <div class="logo">
+            <h1>*SunRise </h1>
+        </div>
+        <div class="links">
+            <a href="#header" class="active">Home</a>
+            <a href="#About">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Book">Book Appoinment</a>
+            <a href="#Review">Reviews</a>
+        </div>
+        <div class="menu-links">
+            <i onclick="opennav(`Ipad`)" id="ipad" class="fa-solid fa-bars"></i>
+            <i onclick="opennav(`mobile`)" id="mobile" class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div id="res-navbar" class="res-navbar">
+        <div class="heading">
+            <b>Navigation</b>
+            <i onclick="closenav()" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="Links">
+            <a onclick="closenav()"  href="#header">Home</a>
+            <a onclick="closenav()"  href="#About">About</a>
+            <a onclick="closenav()"  href="#Services">Services</a>
+            <a onclick="closenav()"  href="#Book">Book Appoinment</a>
+            <a onclick="closenav()"  href="#Review">Reviews</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, veritatis laborum impedit itaque
+                voluptatum nisi saepe eos molestiae doloremque perspiciatis reiciendis, sint tenetur eligendi optio
+                repudiandae ipsa, repellendus quidem assumenda.</p>
+        </div>
+    </div>
+    <div id="header" class="header">
+        <div  data-aos="fade-right" class="left">
+            <h1>Hey, we are Sunrise Best <span>hospital</span> in your city.</h1>
+            <p>Hey, we are Sunrise, a hospital based in Karachi, Pakistan. If you have any problems related to your heart, teeth, or body, we can fix them.</p>
+            <a href="#Book">Book Appoinment</a>
+        </div>
+        <div data-aos-duration="10s"  data-aos="fade-down" class="right">
+            <img src="./img/Doc.jpg" alt="">
+        </div>
+    </div>
+    <div data-aos="fade-right" id="About" class="About">
+        <div class="heading">
+            <h1>About <span>Sunrise</span></h1>
+        </div>
+        <div class="About-section">
+            <div class="left">
+                <img src="./img/Doc.jpg" alt="">
+            </div>
+            <div class="right">
+                <div class="card">
+                    <div class="heading">
+                        <b>Expericence</b>
+                    </div>
+                    <div class="para">
+                        <p>Hey, we are Sunrise, a hospital based in Karachi, Pakistan. If you have any problems related to your heart, teeth, or body, we can fix them. We have 20 years of experience in the health industry, and we have approximately 20 doctors in our hospital.</p>
+                    </div>
+                </div>
+                <div class="more-det">
+                    <div onclick="moreabo(`first`)" class="more">
+                        <b>Address <span>
+                        <i onclick="moreabo(`first`)" id="more-arr" class="fa-solid fa-arrow-down"></i>
+                    </span></b>
+                        <p id="more-para">We are available in Country: Pakistan, City: Karachi, Town: Saddar.</p>
+                    </div>
+                    <div onclick="moreabo(`second`)" class="more">
+                        <b>Phone Number <span><i onclick="moreabo(`second`)"
+                                    class="fa-solid fa-arrow-down" id="more-arr1"></i>
+                                </span></b>
+                        <p id="more-para1">Phone Number 1: +923160007187, <br> Phone Number 2: +9241687483, <br> Phone Number 3: +92387874839</p>
+                    </div>
+                    <div onclick="moreabo(`third`)" class="more">
+                        <b>Opening Hours <span><i onclick="moreabo(`third`)"
+                                    class="fa-solid fa-arrow-down" id="more-arr2"></i>
+                                </span></b>
+                        <p id="more-para2">We are available 12 hours a day, 8 a.m. to 8 p.m., Monday to Friday, Saturday, Sunday, close.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="Services" data-aos="fade-right" class="Team">
+        <div class="heading">
+            <h1>Services</h1>
+        </div>
+        <div class="Cards">
+            <div class="Card">
+                <div class="img">
+                    <img src="./img/cardiology.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1><span><i class="fa-regular fa-heart"></i></span>Heart specialist</h1>
+                    <p>We provide solutions to your heart problems. We have a heart specialist with 10 years of experience. </p>
+                </div>
+            </div>
+            <div class="Card">
+                <img src="./img/teeth.jpg" alt="">
+                <div class="text">
+                    <h1><span><i class="fa-solid fa-tooth"></i></span>Dentist</h1>
+                    <p>We provide solutions to your tooth problems. We have a dentist with 8 years of experience. </p>
+                </div>
+            </div>
+            <div class="Card">
+                <img src="./img/physiotherapist.jpg" alt="">
+                <div class="text">
+                    <h1><span><i class="fa-solid fa-child"></i></span>Physiotherapist</h1>
+                    <p>We provide solutions to your body problems. We have a physiotherapist with 9 years of experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-right" id="Review" class="Testimonial">
+        <div class="heading">
+            <h1>Reviews</h1>
+        </div>
+        <div id="See-review" class="tes-section">
+            <div class="right">
+                <div id="Review-card" class="review">
+         
+                </div>
+            </div>
+        </div>
+        <div id="Give-review" class="Give-review">
+            <form action=""  method="post" name="testimonial" class="form">
+                <div class="inputs">
+                    <input type="name" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Review" placeholder="Your Review" required>
+                </div>
+                <div class="sub">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+        <div class="redirect-btn">
+            <div id="arr-btn" class="arrow">
+                <i id="left" onclick="scrooll()" class="fa-solid fa-circle-arrow-left"></i>
+                <i onclick="scroolR()" class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+            <p onclick="giveReview()" id="give">Want To Give Review</p>
+            <p onclick="seeReview()" id="see">Want To See Review</p>
+        </div>
+    </div>
+    <div data-aos="fade-right" class="Servies">
+        <div class="heading">
+            <h1>Our Team</h1>
+        </div>
+        <div class="Cards">
+            <div class="Card">
+                <div class="img">
+                    <img src="./img/heart-specilaist.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1><span><i class="fa-regular fa-heart"></i></span>Ishaq Hussain</h1>
+                    <b>Heart Specialist</b>
+                    <p>Ishaq is our professional doctor. Ishaq is a heart specialist. With 10 years of experience, he can
+                        Fix any problem related to your heart.</p>
+                </div>
+            </div>
+            <div class="Card">
+                <img src="./img/dentist.jpg" alt="">
+                <div class="text">
+                    <h1><span><i class="fa-solid fa-tooth"></i></span>Mohammed Feroz</h1>
+                    <b>Dentist</b>
+                    <p>Feroz is our professional doctor. Feroz is a professional dentist. He has 8 years of
+                        experience, he can fix any problem related to your teeth.</p>
+                </div>
+            </div>
+            <div class="Card">
+                <img src="./img/physiotherapist.jpg" alt="">
+                <div class="text">
+                    <h1><span><i class="fa-solid fa-child"></i></span>Abdullah Hashmi</h1>
+                    <b>Physiotherapist</b>
+                    <p>Abdullah is Our professional physiotherapist, Abdullah, has 9 years of
+                        experience, he can fix any problem related to your body. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Book" class="Appoinment">
+        <div class="heading">
+            <h1>Book <span>Appoinment</span></h1>
+        </div>
+        <div class="Appoinment-section">
+            <div class="Appoinment-form">
+                <form onsubmit="alert(`Your Appoinment is Booked Plese Contact us As Soon As Possible PhoneNo: +923160007187`)" action="">
+                    <div class="inputs">
+                        <input type="name" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="number" placeholder="Number" required>
+                        <input type="text" placeholder="Service" required>
+                    </div>
+                    <div class="textarea">
+                        <textarea name="" placeholder="Some Details"></textarea>
+                        <input  type="submit" placeholder="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class='Footer'>
+        <div class="Name">
+          <h1>Sunrise</h1>
+        </div>
+        <div class="qucik-links">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Projects</a>
+          <a href="">Contact</a>
+          <a href="">Hire Now</a>
+          <a href="">Reviews</a>
+        </div>
+      </div>
+    <script src="./JS/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+  duration: 800,
+});
+      </script>
+</body>
+
+</html>

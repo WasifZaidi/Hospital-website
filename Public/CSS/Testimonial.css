@@ -1,0 +1,284 @@
+.Testimonial {
+    padding: 5vw 6vw;
+    font-family: 'EB Garamond', serif;
+    padding-bottom: 0vw;
+}
+
+.Testimonial .heading h1 {
+    font-size: 7vw;
+}
+
+.Testimonial .heading h1 span {
+    color: rgb(37, 179, 37);
+}
+
+.Testimonial .tes-section {
+    display: flex;
+    gap: 4vw;
+    justify-content: center;
+    padding-top: 2vw;
+    padding-bottom: 0vw;
+    align-items: center;
+}
+
+.Testimonial .left {
+    width: 0%;
+    display: none;
+}
+
+.Testimonial .right {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    margin-bottom: 4vw;
+}
+
+.Testimonial .right .review {
+    width: 60vw;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: scroll;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Testimonial .right .review .card {
+    width: 60vw;
+    height: 100%;
+    padding: 5vw 3vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    background-color: gainsboro;
+
+}
+
+.tes-section .right .review .card h1 {
+    color: rgb(0, 0, 0);
+    font-size: 3vw;
+}
+
+.tes-section .right .review .card p {
+    color: rgb(0, 0, 0);
+    font-size: 1.9vw;
+}
+
+.Testimonial .redirect-btn {
+    width: 100%;
+    font-size: 2vw;
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    font-weight: 900;
+    /* padding-top: 4vw; */
+    color: rgb(37, 179, 37);
+    justify-content: flex-end;
+}
+
+.Testimonial .redirect-btn p {
+    cursor: pointer;
+}
+
+.Testimonial .redirect-btn .arrow {
+    display: flex;
+    font-size: 4vw;
+    gap: 2vw;
+    color: black;
+    cursor: pointer;
+}
+
+.Testimonial .redirect-btn #see {
+    display: none;
+}
+
+.Testimonial .Give-review {
+    display: none;
+    gap: 4vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.Testimonial .Give-review form {
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.Testimonial .Give-review form .inputs {
+    display: flex;
+    width: 100%;
+    gap: 1vw;
+}
+
+.Testimonial .Give-review form .inputs input {
+    width: 50%;
+    font-size: 1.2vw;
+    padding: 1vw;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid black;
+}
+
+.Testimonial .Give-review form .sub input {
+    width: 100%;
+    font-size: 1.2vw;
+    padding: 1vw;
+    background-color: rgb(37, 179, 37);
+    border: 0px;
+}
+
+@media screen and (max-width:1000px) {
+    .Testimonial {
+        padding: 10vw 6vw;
+        padding-bottom: 0vw;
+    }
+
+    .Testimonial .heading h1 {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .Testimonial .tes-section {
+        flex-direction: column-reverse;
+        padding-top: 4dvh;
+        padding-bottom: 0vw;
+    }
+
+    .Testimonial .left {
+        display: none;
+    }
+
+    .Testimonial .right {
+        width: 100%;
+        margin-bottom: 6vw;
+    }
+
+    .Testimonial .right .review {
+        width: 100vw;
+    }
+
+    .Testimonial .right .review .card {
+        width: 100vw;
+        padding: 4vw;
+    }
+
+    .tes-section .right .review .card h1 {
+        font-size: 8vw;
+    }
+
+    .tes-section .right .review .card p {
+        font-size: 3vw;
+        width: 80%;
+    }
+
+    .Testimonial .redirect-btn .arrow {
+        display: flex;
+        font-size: 4vw;
+        gap: 4vw;
+    }
+
+    .Testimonial .redirect-btn {
+        font-size: 6vw;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6vw;
+        padding-top: 8vw;
+    }
+
+    .Testimonial .redirect-btn .arrow {
+        display: flex;
+        font-size: 10vw;
+        width: 100%;
+        justify-content: center;
+        gap: 6vw;
+    }
+    .Testimonial .redirect-btn .arrow #left{
+        display: none;
+    }
+
+    .Testimonial .Give-review form {
+        width: 100%;
+        gap: 2vw;
+    }
+
+    .Testimonial .Give-review form .inputs input {
+        width: 50%;
+        font-size: 2.4vw;
+        padding: 2vw;
+    }
+
+    .Testimonial .Give-review form .sub input {
+        width: 100%;
+        font-size: 2.4vw;
+        padding: 2vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .Testimonial {
+        padding: 20vw 6vw;
+        padding-bottom: 0vw;
+    }
+    .Testimonial .heading h1 {
+        font-size: 15vw;
+    }
+    .Testimonial .tes-section{
+        padding-top: 6vw;
+    }
+
+    .Testimonial .right {
+        margin-bottom: 8vw;
+    }
+
+    .tes-section .right .review .card h1 {
+        font-size: 10vw;
+    }
+
+    .tes-section .right .review .card p {
+        font-size: 4vw;
+        width: 80%;
+    }
+
+    .Testimonial .right .review .card {
+        padding: 5vw;
+    }
+
+    .Testimonial .redirect-btn {
+        font-size: 8vw;
+    }
+
+    .Testimonial .redirect-btn .arrow {
+        font-size: 14vw;
+        gap: 10vw;
+    }
+
+    .Testimonial .Give-review {
+        padding-top: 8vw;
+        padding-bottom: 0vw;
+    }
+
+    .Testimonial .Give-review form {
+        width: 100%;
+        gap: 3vw;
+    }
+
+    .Testimonial .Give-review form .inputs {
+        flex-direction: column;
+    }
+
+    .Testimonial .Give-review form .inputs input {
+        width: 100%;
+        font-size: 4vw;
+        padding: 4vw;
+    }
+
+    .Testimonial .Give-review form .sub input {
+        width: 100%;
+        font-size: 4vw;
+        padding: 4vw;
+    }
+}
